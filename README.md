@@ -9,75 +9,49 @@
 This project is a **simple console-based Hotel Reservation System** developed as part of the **Dong-Eui University C++ course project**.  
 It allows users to manage hotel operations such as adding rooms, booking rooms, handling customer data, and authenticating users.
 
----
+# Hotel Reservation Manager (C++ CLI)
+
+Simple C++17 CLI hotel reservation manager for course project.
+
+## Features
+- OOP design with inheritance for Room types.
+- Caesar cipher (shift 3) for stored passwords.
+- Admin and user login.
+  - Default user: `deu` / `deu123`
+  - Default admin: `admin` / `admin123`
+- Admin can reserve on behalf of any user; users can reserve only for themselves.
+- File I/O: guests.txt and reservations.txt persist data.
+- Date validation (YYYY-MM-DD) and overlapping reservation checks.
+- Robust exception handling to avoid crashes on bad input.
+- Menu-driven numeric commands.
+- build.bat compiles using g++ (Windows).
+- run_tests.bat runs a sample flow using prepared input.
+
+## Build & Run (Windows)
+1. Open a terminal and make sure `g++` is on PATH.
+2. Run `build.bat` to compile.
+3. Run `HotelReservation.exe` to start the program.
+4. Optionally run `run_tests.bat` to run a scripted example.
+
+## Project layout
+- src/ : all `.cpp` and `.hpp` source files.
+- data/ : generated runtime files (guests.txt, reservations.txt).
+- build.bat : compile script (Windows).
+- run_tests.bat : runs the program with sample input.
+
+## Notes for graders / students
+- Code is split into four contributor `.cpp` files (member1..member4) so each member can claim work.
+- `using namespace std;` is present in `.cpp` files to reduce `std::` noise per request.
+- If you push to GitHub, add an appropriate `.gitignore` (not provided here).
 
 
-## 🛠 Tech Stack  
-- **Language:** C++  
-- **File Handling:** CSV  
-- **Testing:** Unit Tests (C++)
 
----
+## 📚 Acknowledgements
+- C++ Reference Documentation
 
-## ⭐ Features  
-- 🔐 **Authentication System**  
-- 🏨 **Add & Manage Hotel Rooms**  
-- 🛏 **Room Booking System**  
-- 📄 **CSV File Storage**  
-- 🧪 **Unit Testing Support**  
-- 🔑 **Password Hashing for Security**
+##  All contributors and team members
 
----
-
-## 📘 Lessons Learned  
-While building this project, we learned:  
-- Efficient **memory management** in C++  
-- Practical implementation of **Object-Oriented Programming**  
-- Managing multiple classes and structuring clean code  
-- How **hashing algorithms** work for encrypting passwords and sensitive data  
-- Optimizing functions for faster execution
-
----
-
-## 🚀 Getting Started  
-
-### **1. Navigate to the project directory**
-```sh
-cd cpp-hotel-reservation-main
-2. Build the main program
-sh
-Copy code
-g++ -std=c++11 ./src/main.cpp -o ./output/main
-3. Run the project
-sh
-Copy code
-./output/main
-🧪 Running Unit Tests
-Build the test file
-sh
-Copy code
-g++ -std=c++11 ./tests/main_test.cpp -o ./output/main_test
-Run the unit tests
-sh
-Copy code
-./output/main_test
-⚡ One-Command Auto Build
-To build automatically using the provided script:
-
-sh
-Copy code
-./build_${project/unit_test}.sh
-🌍 Environment Variables
-To run this project on Windows, ensure the following is added to your PATH:
-
-g++ compiler (from MinGW or similar)
-
-📚 Acknowledgements
-C++ Reference Documentation
-
-All contributors and team members
-
-📩 Feedback
-If you have feedback or suggestions, please reach out:
-📧 sherparinchen78@gmail.com
+##  📩 Feedback
+- If you have feedback or suggestions, please reach out:
+- 📧 sherparinchen78@gmail.com
 
