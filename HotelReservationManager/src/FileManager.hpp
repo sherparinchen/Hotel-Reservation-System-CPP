@@ -1,6 +1,6 @@
 #ifndef FILEMANAGER_HPP
 #define FILEMANAGER_HPP
-
+// New file
 #include <vector>
 #include "Reservation.hpp"
 #include "Guest.hpp"
